@@ -46,7 +46,14 @@ button {
   font-size: 0.95rem;
 }
 
-#catalog {
+.category-heading {
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 20px 0 8px;
+  opacity: 0.8;
+}
+
+.category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 12px;

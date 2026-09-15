@@ -10,16 +10,34 @@ async function loadProducts() {
 function renderCatalog() {
   const catalog = document.getElementById("catalog");
   catalog.innerHTML = "";
+
+  const byCategory = new Map();
   for (const p of products) {
-    const card = document.createElement("div");
-    card.className = "product-card";
-    card.innerHTML = `
-      <h3>${p.name}</h3>
-      <div class="meta">₹${p.priceRupees} · ${p.weightGrams}g</div>
-      <button data-id="${p.id}">Add</button>
-    `;
-    card.querySelector("button").addEventListener("click", () => addToCart(p.id));
-    catalog.appendChild(card);
+    if (!byCategory.has(p.category)) byCategory.set(p.category, []);
+    byCategory.get(p.category).push(p);
+  }
+
+  for (const [category, items] of [...byCategory.entries()].sort()) {
+    const section = document.createElement("section");
+    section.className = "category-section";
+    section.innerHTML = `<h2 class="category-heading">${category}</h2>`;
+
+    const grid = document.createElement("div");
+    grid.className = "category-grid";
+    for (const p of items) {
+      const card = document.createElement("div");
+      card.className = "product-card";
+      card.innerHTML = `
+        <h3>${p.name}</h3>
+        <div class="meta">₹${p.priceRupees} · ${p.weightGrams}g</div>
+        <button data-id="${p.id}">Add</button>
+      `;
+      card.querySelector("button").addEventListener("click", () => addToCart(p.id));
+      grid.appendChild(card);
+    }
+
+    section.appendChild(grid);
+    catalog.appendChild(section);
   }
 }
 

@@ -10,22 +10,44 @@ the business model itself:
   scooter round trip in minutes, which is what makes fast delivery on cheap
   items economical in the first place.
 
-Within those constraints, the catalog is deliberately built around
-**high-margin, low-grade, extremely cheap items** — things like agarbatti,
-matchboxes, chewing gum, hair clips, cheap earphones/cables, batteries,
-lighters, condoms, sanitary pads, band-aids, tea sachets, budget sunglasses,
-keychains, pens. Low absolute cost of goods (₹1-40) but 50-70%+ margin, sold
-at a price point (₹3-150) where customers don't think twice.
+Within those constraints, the catalog is built around what a real kirana
+(neighborhood corner store) actually sells: daily-necessity staples people
+buy on repeat — eggs, milk, curd, onion/tomato/potato, atta, rice, dal,
+sugar, salt, cooking oil, bread — sold in small, single/family-serving
+packs (200-450g, always under the cap), plus the small convenience/impulse
+items every kirana also stocks (agarbatti, matchboxes, batteries, cheap
+electronics accessories, personal-care basics).
 
-## Why this shape
+## Why this shape, and an honest note on margin
 
-Standard quick-commerce (Blinkit/Zepto/Instamart) carries groceries and
-household staples at thin margins, subsidized by scale and VC capital. This
-project instead targets the *opposite* corner: minimum logistics cost (light,
-small radius) paired with maximum margin (cheap-to-source items sold at an
-impulse-buy price). It's a much smaller, simpler business to actually run —
-one dark store, one delivery zone, a catalog you could stock from a single
-wholesale trip.
+The staples are **not** high-margin — matching real kirana economics, not
+an idealized one. `GET /api/admin/margins` shows the actual split:
+
+- **Milk (15.4%), eggs (21.4%)**: thin-margin, price-sensitive commodities.
+  Kirana stores don't make money on these; they stock them because a
+  customer who comes in daily for milk also picks up two or three other
+  things while they're there. They're a footfall/repeat-visit driver, not
+  a profit center.
+- **Vegetables (onion/tomato/potato, ~30-33%)**: moderate margin — real
+  wholesale-to-retail markup on perishables with some handling/wastage
+  built in.
+- **Salt (50%), turmeric/red chilli powder (55-56%), coriander (60%)**:
+  genuinely high margin. These are the "small stuff" that actually pays —
+  tiny absolute cost, priced at a level where the customer never questions
+  it. This is where the "high margin" part of the business model actually
+  lives, not on the staples that get people in the door.
+- **The original convenience-item tail** (agarbatti, matchboxes, cheap
+  electronics accessories, personal care) still carries 50-70%+ margin and
+  stays in the catalog for the same reason a real kirana keeps a shelf of
+  it: cheap to stock, high margin, bought on impulse alongside groceries.
+
+So the actual model is: **staples for repeat traffic, margin captured on
+spices/salt/herbs and the convenience-item tail sold in the same basket** —
+which is exactly how a real kirana store's economics work, not a "sell
+everything at high margin" fantasy. Standard quick-commerce (Blinkit/Zepto/
+Instamart) runs this same staples-plus-margin-tail model at large scale
+subsidized by VC capital; this project runs the same logic at a
+single-dark-store, single-neighborhood scale.
 
 ## Architecture
 
@@ -70,6 +92,15 @@ Open `http://localhost:3000`.
   integration, no rider/dispatch flow, no auth. This is a catalog + delivery-
   eligibility MVP, not a complete order pipeline.
 - No real sourcing/inventory data yet — `data/products.json` costs/margins
-  are illustrative, not sourced from actual supplier quotes.
+  are illustrative estimates of real Indian retail/wholesale price gaps, not
+  sourced from actual supplier quotes. Perishables (vegetables, dairy, eggs)
+  especially need real supplier pricing and spoilage/wastage accounting
+  before trusting the margin numbers — a backtest-style caveat, in the same
+  spirit as `~/repos/money-making`'s "don't trust a number until it's
+  checked against reality."
+- No cold-chain/freshness handling modeled at all — milk, curd, and eggs
+  need refrigeration and have shelf life, which a pure catalog+cart model
+  doesn't represent. This matters operationally (dark-store fridge capacity,
+  spoilage cost) even though it doesn't change the weight/radius logic.
 - Single dark-store only; multi-store routing would need real logic once
   there's more than one location.

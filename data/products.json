@@ -14,5 +14,25 @@
   { "id": "tea-sachets", "name": "Tea Sachets (5pcs)", "costRupees": 6, "priceRupees": 20, "weightGrams": 30, "category": "food" },
   { "id": "cheap-sunglasses", "name": "Sunglasses (budget)", "costRupees": 30, "priceRupees": 99, "weightGrams": 35, "category": "accessories" },
   { "id": "keychain", "name": "Keychain / Trinket", "costRupees": 4, "priceRupees": 20, "weightGrams": 15, "category": "accessories" },
-  { "id": "pen-pack", "name": "Ballpoint Pen Pack (5pcs)", "costRupees": 5, "priceRupees": 20, "weightGrams": 25, "category": "stationery" }
+  { "id": "pen-pack", "name": "Ballpoint Pen Pack (5pcs)", "costRupees": 5, "priceRupees": 20, "weightGrams": 25, "category": "stationery" },
+
+  { "id": "eggs-6pack", "name": "Eggs (6-pack)", "costRupees": 33, "priceRupees": 42, "weightGrams": 330, "category": "eggs" },
+  { "id": "milk-sachet-200ml", "name": "Milk Sachet (200ml)", "costRupees": 11, "priceRupees": 13, "weightGrams": 206, "category": "dairy" },
+  { "id": "curd-cup-200g", "name": "Curd Cup (200g)", "costRupees": 12, "priceRupees": 18, "weightGrams": 200, "category": "dairy" },
+  { "id": "onion-250g", "name": "Onion (250g)", "costRupees": 8, "priceRupees": 12, "weightGrams": 250, "category": "vegetables" },
+  { "id": "tomato-250g", "name": "Tomato (250g)", "costRupees": 10, "priceRupees": 15, "weightGrams": 250, "category": "vegetables" },
+  { "id": "potato-300g", "name": "Potato (300g)", "costRupees": 9, "priceRupees": 13, "weightGrams": 300, "category": "vegetables" },
+  { "id": "green-chilli-100g", "name": "Green Chilli (100g)", "costRupees": 3, "priceRupees": 6, "weightGrams": 100, "category": "vegetables" },
+  { "id": "coriander-bunch", "name": "Coriander Bunch (50g)", "costRupees": 2, "priceRupees": 5, "weightGrams": 50, "category": "vegetables" },
+  { "id": "ginger-garlic-paste-100g", "name": "Ginger-Garlic Paste (100g)", "costRupees": 8, "priceRupees": 15, "weightGrams": 100, "category": "vegetables" },
+  { "id": "atta-450g", "name": "Wheat Atta (450g)", "costRupees": 18, "priceRupees": 25, "weightGrams": 450, "category": "staples" },
+  { "id": "rice-450g", "name": "Rice (450g)", "costRupees": 20, "priceRupees": 28, "weightGrams": 450, "category": "staples" },
+  { "id": "toor-dal-250g", "name": "Toor Dal (250g)", "costRupees": 22, "priceRupees": 30, "weightGrams": 250, "category": "staples" },
+  { "id": "sugar-450g", "name": "Sugar (450g)", "costRupees": 18, "priceRupees": 24, "weightGrams": 450, "category": "staples" },
+  { "id": "salt-400g", "name": "Salt (400g)", "costRupees": 5, "priceRupees": 10, "weightGrams": 400, "category": "staples" },
+  { "id": "cooking-oil-200ml", "name": "Cooking Oil Pouch (200ml)", "costRupees": 18, "priceRupees": 25, "weightGrams": 184, "category": "staples" },
+  { "id": "bread-loaf", "name": "Bread Loaf (350g)", "costRupees": 22, "priceRupees": 35, "weightGrams": 350, "category": "staples" },
+  { "id": "turmeric-powder-100g", "name": "Turmeric Powder (100g)", "costRupees": 8, "priceRupees": 18, "weightGrams": 100, "category": "spices" },
+  { "id": "red-chilli-powder-100g", "name": "Red Chilli Powder (100g)", "costRupees": 9, "priceRupees": 20, "weightGrams": 100, "category": "spices" },
+  { "id": "cumin-seeds-50g", "name": "Cumin Seeds (50g)", "costRupees": 10, "priceRupees": 22, "weightGrams": 50, "category": "spices" }
 ]

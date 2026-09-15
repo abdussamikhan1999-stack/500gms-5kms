@@ -12,12 +12,19 @@ into the core business logic, not just marketing copy:
 2. Delivery only happens within 5km of the single dark-store location
    (`server/geo.js`, `isWithinRadiusKm`, wired in `server/index.js`).
 
-The catalog is deliberately stocked with cheap, high-margin, "low-grade"
-items (agarbatti, matchboxes, chewing gum, cheap electronics accessories,
-personal-care basics) rather than groceries — see README.md's "Why this
-shape" for the business reasoning. Changing the catalog mix is fine; removing
-the weight/radius constraints from the actual logic (not just the seed data)
-would defeat the point of the project.
+The catalog models a real kirana store's actual mix, not an idealized
+"everything is high margin" one — see README.md's "Why this shape, and an
+honest note on margin" for the full reasoning. In short: daily-necessity
+staples (milk, eggs, vegetables, atta, rice, dal, sugar, oil, bread) are
+priced at realistic thin-to-moderate margins (milk ~15%, eggs ~21%,
+vegetables ~30-33%) because that's what drives repeat daily visits, not
+profit. Actual margin is captured on salt/spices/herbs (50-60%+) and the
+original convenience-item tail (agarbatti, batteries, cheap electronics
+accessories, personal care — 50-70%+). **When adding catalog items, price
+them to this same realistic split** — don't just set every new item's price
+to make margin look good; staples should look like real staples. Changing
+the catalog mix is fine; removing the weight/radius constraints from the
+actual logic (not just the seed data) would defeat the point of the project.
 
 ## Architecture: pure logic separated from I/O
 
@@ -49,7 +56,11 @@ Tests run against plain objects/Maps, matching the pure-logic split above.
 - `STORE_LOCATION` in `server/index.js` is a hardcoded central-Delhi
   lat/lng placeholder, not a real dark-store address.
 - `data/products.json` costs/prices/margins are illustrative starting
-  points, not sourced from real supplier quotes.
+  points, not sourced from real supplier quotes — perishables (vegetables,
+  dairy, eggs) especially need real numbers before trusting margin claims.
+- No cold-chain/freshness/spoilage modeling — milk, curd, and eggs need
+  refrigeration and have shelf life; the catalog+cart logic doesn't
+  represent this at all yet.
 - No persistence (orders vanish on server restart), no payments, no auth,
   no rider dispatch. This is a catalog + delivery-eligibility + cart-math
   MVP only — see README's "Known gaps / next steps" for the honest list.
