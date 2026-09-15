@@ -102,12 +102,66 @@ sources. Here's what's actually backed by a citation and what still isn't:
   strong margins despite small basket share." Added `toothbrush` at an
   80% margin specifically to illustrate the opposite corner from
   milk/eggs: real margin, but nobody buys one daily.
+- **Eggs, using free open government/industry data**: [NECC](https://necc.in/)
+  (National Egg Coordination Committee) publishes the official daily
+  wholesale benchmark — current quotes cluster around **₹5.7-6.4/egg**
+  ([KisanDeals' NECC tracker](https://www.kisandeals.com/egg-rate)),
+  described there as "the price at which eggs leave poultry farms and
+  reach distributors." `eggs-6pack` cost was set to ₹37 (₹6.2/egg) to
+  match. That same source claims retail runs "10-25% higher" than NECC
+  wholesale — used to set the retail price at ₹43 (~15% markup,
+  **14% margin**) — though the same page also states local shops charge
+  "Rs.5-8 more per egg," which is inconsistent with its own 10-25%
+  figure and implausible against commonly observed ₹6-8/egg retail
+  prices, so that second claim was discarded as unreliable rather than
+  used. Independently cross-checked by an [RBI study reported in
+  Business Standard](https://www.business-standard.com/markets/capital-market-news/rbi-study-shows-tomato-onion-and-potato-farmers-get-only-a-third-of-retail-price-that-consumer-pays-124100400307_1.html):
+  **egg farmers keep ~75% of the consumer rupee** (vs. only 33-37% for
+  TOP vegetables, see below) — a genuinely efficient supply chain, which
+  is exactly what a ~14% total wholesale-to-retail margin implies. Two
+  independent sources agreeing is why this one moved from estimated to
+  sourced.
+- **Milk, using Amul/GCMMF's own published payout ratio**: Amul
+  [publicly states it passes ~80 paise of every consumer rupee to
+  farmers](https://dairybusinessmea.com/2025/05/27/amul-dairy-boosts-milk-procurement-price-while-lowering-cattle-feed-costs/)
+  — meaning the ENTIRE remaining chain (processing, packaging,
+  distribution, AND retail together) splits only ~20% of the retail
+  price. Since the retailer's own cut is a slice of that already-thin
+  20%, not the whole thing, `milk-sachet-200ml` was re-priced to
+  **7.7% margin** (cost ₹12, price ₹13) — down from an invented 15.4%,
+  now bounded by a real ceiling instead of guessed independently of it.
+- **Vegetables (onion/tomato/potato), partially**: the same RBI-study
+  finding above reports **TOP-vegetable farmers keep only 33.5-37% of
+  the consumer rupee** — a large 63-66% total farm-to-retail spread,
+  confirming vegetables are genuinely NOT a thin-margin category the way
+  milk/eggs are. This is real and citable, but it measures the *whole*
+  chain (mandi commission agents and transporters take a cut before a
+  small retailer ever buys the stock), not the kirana retailer's own
+  margin specifically — so it supports keeping the existing ~30-33%
+  *retailer-level* estimate as plausible (clearly below the 63-66%
+  whole-chain ceiling, as it should be) without claiming that number
+  itself is sourced. Wholesale mandi prices for onion/tomato/potato were
+  also checked directly (multiple Delhi mandi-price trackers, e.g.
+  [commodityonline.com](https://www.commodityonline.com/mandiprices/tomato),
+  [todaypricerates.com](https://market.todaypricerates.com/Delhi-vegetables-price))
+  and found **genuinely volatile day-to-day and source-to-source** —
+  onion wholesale quotes ranged ₹22-56/kg across sources checked the same
+  week — which is itself a well-documented, real feature of Indian
+  vegetable markets (see the price-volatility coverage in the same RBI
+  study reporting), not a data-quality problem with this research. The
+  existing per-item cost/price numbers were left as-is since no single
+  wholesale figure is more "correct" than another this week.
 
 **Still honestly estimated, not sourced:**
-- Vegetables (onion/tomato/potato/herbs), eggs, milk, curd, and bread —
-  no retailer published a hard margin number for fresh perishables at
-  kirana scale in anything found so far. The 15-33% range used for these
-  is a reasonable estimate of wholesale-to-retail spread, not a citation.
+- Curd and bread — no retailer, company report, or government source
+  found with a usable margin number for either at kirana scale. (Amul's
+  farmer-payout ratio is dairy-wide, not curd-specific; Britannia's
+  public disclosures are consolidated-company gross margin, not a
+  bread/bakery segment or retailer-level number.) These stay at their
+  original invented 33-37% estimates.
+- The vegetable/herb items' exact retail markup (see above) — the
+  *existence* of a large real margin is now sourced, the *specific
+  percentage* still isn't.
 - Actual purchase *frequency/velocity* per SKU (as opposed to category-
   level claims like "snacks are ~32% of orders") — nothing found breaks
   this down to the individual-item level, and this app still has no real

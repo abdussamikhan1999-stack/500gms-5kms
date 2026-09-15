@@ -16,8 +16,8 @@
   { "id": "keychain", "name": "Keychain / Trinket", "costRupees": 4, "priceRupees": 20, "weightGrams": 15, "category": "accessories" },
   { "id": "pen-pack", "name": "Ballpoint Pen Pack (5pcs)", "costRupees": 5, "priceRupees": 20, "weightGrams": 25, "category": "stationery" },
 
-  { "id": "eggs-6pack", "name": "Eggs (6-pack)", "costRupees": 33, "priceRupees": 42, "weightGrams": 330, "category": "eggs" },
-  { "id": "milk-sachet-200ml", "name": "Milk Sachet (200ml)", "costRupees": 11, "priceRupees": 13, "weightGrams": 206, "category": "dairy" },
+  { "id": "eggs-6pack", "name": "Eggs (6-pack, NECC-benchmarked)", "costRupees": 37, "priceRupees": 43, "weightGrams": 330, "category": "eggs" },
+  { "id": "milk-sachet-200ml", "name": "Milk Sachet (200ml, Amul-benchmarked)", "costRupees": 12, "priceRupees": 13, "weightGrams": 206, "category": "dairy" },
   { "id": "curd-cup-200g", "name": "Curd Cup (200g)", "costRupees": 12, "priceRupees": 18, "weightGrams": 200, "category": "dairy" },
   { "id": "onion-250g", "name": "Onion (250g)", "costRupees": 8, "priceRupees": 12, "weightGrams": 250, "category": "vegetables" },
   { "id": "tomato-250g", "name": "Tomato (250g)", "costRupees": 10, "priceRupees": 15, "weightGrams": 250, "category": "vegetables" },

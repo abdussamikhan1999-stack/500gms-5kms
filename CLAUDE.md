@@ -17,7 +17,9 @@ The catalog models a real kirana store's actual mix, not an idealized
 honest note on margin" AND "What's real research vs. still estimated" for
 the full reasoning and citations. In short: daily-necessity staples (milk,
 eggs, vegetables, atta, rice, dal, sugar, oil, bread) are priced at
-realistic thin-to-moderate margins (milk ~15%, eggs ~21%, vegetables
+realistic thin-to-moderate margins (milk ~7.7% — bounded by Amul's own
+published "80 paise/rupee to farmers" ratio, eggs ~14% — NECC wholesale
+benchmark + cross-checked by an RBI farmer-share study, vegetables
 ~30-33%, branded oil ~8%) because that's what drives repeat daily visits,
 not profit. Actual margin is captured on loose/weighed staples and
 spices (25-60%, backed by a real "loose goods by weight = best margins"
@@ -31,8 +33,10 @@ prefer a real citation over inventing a number** — README's "What's real
 research vs. still estimated" section is the running ledger of which
 prices are backed by a source (Setuverse's kirana margin breakdown,
 RedSeer/Shiprocket quick-commerce category reports, the HUL sachet-revolution
-citations) versus which are still honest guesses (currently: vegetables,
-eggs, milk, curd, bread — no hard perishables-margin source found yet).
+citations, NECC's egg wholesale benchmark, Amul's farmer-payout ratio, and
+an RBI farmer-share study for eggs/TOP-vegetables) versus which are still
+honest guesses (currently: curd, bread, and the exact retail-markup
+percentage on vegetables — see README for what IS sourced there).
 Update that ledger when you add or reprice anything; don't just add a new
 line to `data/products.json` without saying which bucket it's in. Changing
 the catalog mix is fine; removing the weight/radius constraints from the
