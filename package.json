@@ -1,0 +1,16 @@
+{
+  "name": "500gms-5kms",
+  "version": "0.1.0",
+  "description": "Quick-commerce storefront: sub-500g, high-margin items, 5km delivery radius",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}

@@ -1,0 +1,18 @@
+[
+  { "id": "agarbatti-pack", "name": "Agarbatti Pack (50 sticks)", "costRupees": 8, "priceRupees": 20, "weightGrams": 50, "category": "household" },
+  { "id": "matchbox", "name": "Matchbox", "costRupees": 1, "priceRupees": 3, "weightGrams": 15, "category": "household" },
+  { "id": "chewing-gum", "name": "Chewing Gum Pack", "costRupees": 5, "priceRupees": 15, "weightGrams": 20, "category": "snacks" },
+  { "id": "toffee-pack", "name": "Toffee Pack (10pcs)", "costRupees": 6, "priceRupees": 20, "weightGrams": 60, "category": "snacks" },
+  { "id": "hair-clip-set", "name": "Hair Clip Set", "costRupees": 5, "priceRupees": 25, "weightGrams": 10, "category": "personal-care" },
+  { "id": "wired-earphones", "name": "Wired Earphones (basic)", "costRupees": 40, "priceRupees": 149, "weightGrams": 30, "category": "electronics" },
+  { "id": "charging-cable", "name": "Phone Charging Cable (basic)", "costRupees": 35, "priceRupees": 129, "weightGrams": 40, "category": "electronics" },
+  { "id": "aa-batteries", "name": "AA Batteries (2-pack, budget)", "costRupees": 10, "priceRupees": 30, "weightGrams": 45, "category": "household" },
+  { "id": "lighter", "name": "Disposable Lighter", "costRupees": 5, "priceRupees": 20, "weightGrams": 25, "category": "household" },
+  { "id": "condom-pack", "name": "Condom Pack (3pcs)", "costRupees": 15, "priceRupees": 60, "weightGrams": 15, "category": "personal-care" },
+  { "id": "sanitary-pads-small", "name": "Sanitary Pads (6pcs)", "costRupees": 20, "priceRupees": 55, "weightGrams": 80, "category": "personal-care" },
+  { "id": "band-aid-pack", "name": "Band-Aid Strips (10pcs)", "costRupees": 8, "priceRupees": 25, "weightGrams": 20, "category": "personal-care" },
+  { "id": "tea-sachets", "name": "Tea Sachets (5pcs)", "costRupees": 6, "priceRupees": 20, "weightGrams": 30, "category": "food" },
+  { "id": "cheap-sunglasses", "name": "Sunglasses (budget)", "costRupees": 30, "priceRupees": 99, "weightGrams": 35, "category": "accessories" },
+  { "id": "keychain", "name": "Keychain / Trinket", "costRupees": 4, "priceRupees": 20, "weightGrams": 15, "category": "accessories" },
+  { "id": "pen-pack", "name": "Ballpoint Pen Pack (5pcs)", "costRupees": 5, "priceRupees": 20, "weightGrams": 25, "category": "stationery" }
+]
