@@ -49,6 +49,70 @@ Instamart) runs this same staples-plus-margin-tail model at large scale
 subsidized by VC capital; this project runs the same logic at a
 single-dark-store, single-neighborhood scale.
 
+## What's real research vs. still estimated
+
+The margin split above was originally an *invented-but-plausible* estimate.
+It has since been checked against real Indian retail/FMCG/quick-commerce
+sources. Here's what's actually backed by a citation and what still isn't:
+
+**Backed by real sources:**
+- **Branded staples are genuinely thin-margin** (2-8%) — confirmed by
+  [Setuverse's kirana margin breakdown](https://www.setuverse.com/blog/kirana-store-profit-margins),
+  which explicitly calls branded atta/oil/sugar/rice "traffic drivers;
+  price-sensitive; near-zero pricing power." `cooking-oil-200ml` was
+  re-priced from an invented 28% down to **8.3%** to match this — branded
+  packaged oil belongs in this bucket, not the loose-goods one.
+- **Loose, weighed staples are a real higher-margin category** (15-30%,
+  same source: "loose goods by weight (dals, spices, dry fruits) — your
+  best margins"). `atta-450g`, `rice-450g`, `toor-dal-250g`, `sugar-450g`,
+  and the three spice items were relabeled "loose/weighed" to make explicit
+  that their 25-30%/55-60% margins assume counter-weighed sale from bulk
+  stock, not a sealed branded packet — that distinction is what makes the
+  margin real. A separate, lower-confidence but widely-repeated claim
+  (aggregated Quora/industry answers) puts *packed* spices even higher —
+  "cost price is about 25% of MRP," i.e. ~75% margin — noted here as
+  corroborating direction, not used to reprice, since it's not a
+  citable primary source.
+- **Personal-care sachets are a real, enormous-volume Indian retail
+  format**: [Simplanations' Chik Shampoo case study](https://www.simplanations.in/p/snap6-chic-shampoo-the-sachet-revolution)
+  and coverage of HUL's rural strategy cite **95% of rural Indian shampoo
+  sales happen via sachets** (ORG Marg data) and **~27 billion sachet units
+  sold by Unilever alone annually**. Added `shampoo-sachet` and
+  `detergent-sachet` at real ₹1-3 sachet price points to reflect this —
+  genuinely the highest-volume format in this entire catalog, priced at
+  retailer-level personal-care margin (10-20%, same Setuverse breakdown)
+  rather than distributor-level (which the sources note is thin once
+  rural logistics cost is factored in).
+- **Snacks/packaged food and personal care are the categories quick-commerce
+  itself confirms**: [RedSeer's 2026 quick-commerce category report](https://redseer.com/articles/quick-commerce-finds-its-new-normal-with-scale-mix-and-momentum/)
+  and a [Shiprocket breakdown of top-selling quick-commerce categories](https://www.shiprocket.in/blog/most-selling-products-on-quick-commerce/)
+  both confirm grocery/staples (~40-45% of orders) for volume, snacks &
+  beverages (~32% share) for impulse-driven frequency, and personal care
+  & beauty specifically flagged by RedSeer as a higher-margin category.
+  Added `instant-noodles-pack`, `chocolate-bar-small` (real-world Maggi/
+  Cadbury-style price points), and `toothpaste-small`, the last priced to a
+  more specific claim in the same aggregated-sources search — "10% on
+  other regular FMCG items (like creams/toothpaste etc)" — hence its 10%
+  margin, tighter than the general 10-20% personal-care band.
+- **Toothbrush as the extreme high-margin/low-volume outlier**: the same
+  aggregated-sources search that flagged spice margins also claims
+  "margins on some very slow-moving items like toothbrush are about
+  300-500%" — folklore-level sourcing (not an official report), but
+  directionally consistent with "personal care and cosmetics benefit from
+  strong margins despite small basket share." Added `toothbrush` at an
+  80% margin specifically to illustrate the opposite corner from
+  milk/eggs: real margin, but nobody buys one daily.
+
+**Still honestly estimated, not sourced:**
+- Vegetables (onion/tomato/potato/herbs), eggs, milk, curd, and bread —
+  no retailer published a hard margin number for fresh perishables at
+  kirana scale in anything found so far. The 15-33% range used for these
+  is a reasonable estimate of wholesale-to-retail spread, not a citation.
+- Actual purchase *frequency/velocity* per SKU (as opposed to category-
+  level claims like "snacks are ~32% of orders") — nothing found breaks
+  this down to the individual-item level, and this app still has no real
+  order history of its own to measure it directly (see "Known gaps" below).
+
 ## Architecture
 
 Static frontend + Node/Express backend, same shape as this account's other

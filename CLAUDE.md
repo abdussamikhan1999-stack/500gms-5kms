@@ -14,15 +14,27 @@ into the core business logic, not just marketing copy:
 
 The catalog models a real kirana store's actual mix, not an idealized
 "everything is high margin" one — see README.md's "Why this shape, and an
-honest note on margin" for the full reasoning. In short: daily-necessity
-staples (milk, eggs, vegetables, atta, rice, dal, sugar, oil, bread) are
-priced at realistic thin-to-moderate margins (milk ~15%, eggs ~21%,
-vegetables ~30-33%) because that's what drives repeat daily visits, not
-profit. Actual margin is captured on salt/spices/herbs (50-60%+) and the
-original convenience-item tail (agarbatti, batteries, cheap electronics
-accessories, personal care — 50-70%+). **When adding catalog items, price
-them to this same realistic split** — don't just set every new item's price
-to make margin look good; staples should look like real staples. Changing
+honest note on margin" AND "What's real research vs. still estimated" for
+the full reasoning and citations. In short: daily-necessity staples (milk,
+eggs, vegetables, atta, rice, dal, sugar, oil, bread) are priced at
+realistic thin-to-moderate margins (milk ~15%, eggs ~21%, vegetables
+~30-33%, branded oil ~8%) because that's what drives repeat daily visits,
+not profit. Actual margin is captured on loose/weighed staples and
+spices (25-60%, backed by a real "loose goods by weight = best margins"
+citation), personal-care sachets (huge real volume — 95% of rural shampoo
+sales, ~27B units/yr for Unilever alone — at 10-20% retailer margin), and
+the original convenience-item tail (agarbatti, batteries, cheap electronics
+accessories, toothbrush — 50-80%+).
+
+**When adding catalog items, price them to this same realistic split, and
+prefer a real citation over inventing a number** — README's "What's real
+research vs. still estimated" section is the running ledger of which
+prices are backed by a source (Setuverse's kirana margin breakdown,
+RedSeer/Shiprocket quick-commerce category reports, the HUL sachet-revolution
+citations) versus which are still honest guesses (currently: vegetables,
+eggs, milk, curd, bread — no hard perishables-margin source found yet).
+Update that ledger when you add or reprice anything; don't just add a new
+line to `data/products.json` without saying which bucket it's in. Changing
 the catalog mix is fine; removing the weight/radius constraints from the
 actual logic (not just the seed data) would defeat the point of the project.
 
